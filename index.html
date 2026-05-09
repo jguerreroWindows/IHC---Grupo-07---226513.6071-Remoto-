@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad el Sol</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .app-container {
+            width: 360px;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        .btn-custom {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <h2 class="text-center mb-4">Universidad el Sol</h2>
+<img src="img/Gemini_Generated_Image_pjwqp1pjwqp1pjwq.png" alt="Logo Universidad" class="img-fluid d-block mx-auto mb-3" style="max-width: 300px;">
+     <label for="usuario">Usuario</label>
+    <input type="text" class="form-control mb-3" placeholder="Ingrese su usuario">
+
+  
+      <label for="password">Contraseña</label>
+    <input type="password" class="form-control mb-3" placeholder="Ingrese su contraseña">
+
+
+   <form action="main.html">
+    <button type="submit" class="btn btn-primary btn-custom">
+        Ingresar
+    </button>
+</form>  <p class="text-center mt-3">
+    <a href="restablecerpassword.html">¿Olvidó su contraseña?</a>
+</p>
+
+    <label for="usuario">Seleccion su idioma</label>
+    <select class="form-control">
+        <option>Español</option>
+        <option>English</option>
+        <option>Português</option>
+    </select>
+
+    <p class="footer-text">
+        Al hacer clic en ingresar, acepta nuestros Términos de servicio y Política de privacidad.
+    </p>
+
+</div>
+
+</body>
+</html>
