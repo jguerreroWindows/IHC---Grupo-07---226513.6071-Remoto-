@@ -66,16 +66,46 @@
     <input type="text" class="form-control mb-3" placeholder="Ingrese su código">
 
    
-    <button class="btn btn-danger btn-block">
-        Confirmar retiro
-    </button>
+   <button class="btn btn-danger btn-block"
+        data-toggle="modal"
+        data-target="#retiroModal">
+    Confirmar retiro
+</button>
+<!-- Modal -->
+<div class="modal fade" id="retiroModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
 
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title">Retiro confirmado</h5>
+        <button type="button" class="close text-white" data-dismiss="modal">
+          
+        </button>
+      </div>
+
+      <div class="modal-body text-center">
+        Se confirmó correctamente el retiro del curso.<br><br>
+        En breve recibirá la información y constancia en su correo institucional.
+      </div>
+
+      <div class="modal-footer">
+        <button type="button"
+                class="btn btn-danger"
+                data-dismiss="modal">
+          Aceptar
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
  
     <p class="text-center mt-3" style="font-size: 12px;">
-        Al confirmar, acepta los términos del retiro académico.
+        Al confirmar, acepta los términos del retiro.
     </p>
 
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
